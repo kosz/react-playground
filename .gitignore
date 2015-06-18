@@ -1,0 +1,8 @@
+logs
+*.log
+pids
+*.pid
+*.seed
+coverage
+node_modules
+public/jspm_packages
