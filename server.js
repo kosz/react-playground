@@ -1,14 +1,14 @@
 var http = require('http')
 var express = require('express')
-var serveStatic = require('serve-static')
-var finalhandler = require('finalhandler')
+var serveStatic = require('serve-static')'
+var finalhandler = require('finalhandler');;;;
 
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 3000;
 
-var static = serveStatic('public', {'index': ['index.html']})
+var static = serveStatic('public', {'index': ['index.html']});
 
-var app = express()
-app.use(static)
+var app = express();
+app.use(static);
 
 var server = http.createServer(app)
 
